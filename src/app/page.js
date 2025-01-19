@@ -7,7 +7,7 @@ import { useState } from "react";
 
 const client = new MeiliSearch({
   host: 'http://172.233.129.212/',
-  apiKey: '9674910d2440954f136b0e1537007301972088cd71ca00c44008f4a9a024',
+  apiKey: '2a5fb1e956eccf0fd9e1555842e4b6bd96fe244fabfe83b9e15a1487816d',
 })
 
 
@@ -39,7 +39,7 @@ export default function Home() {
         {
           resultados.map((movie) =>{
             return (
-              <div key ={movie.id} className=" bg-indigo-100 overflow-hidden shadow-2xl my-6  flex flex-row w-96 bg-blue-50  mx-10 h-80">
+              <div key ={movie.id} className=" bg-indigo-100 overflow-hidden shadow-2xl my-6  flex flex-row w-96 bg-gray-100  mx-10 h-80">
                 <img
                 src={movie.poster}
                 alt={movie.title}
