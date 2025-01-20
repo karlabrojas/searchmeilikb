@@ -1,7 +1,5 @@
 "use client"; 
 
-
-import Image from "next/image";
 import { MeiliSearch } from "meilisearch";
 import { useState } from "react";
 
@@ -47,7 +45,7 @@ export default function Home() {
                 />
                 <div>
                 <h2 className="text-2xl m-5 text-center font-mono font-semibold text-pink-600">{movie.title}</h2>
-                <p className="overflow-hidden m-4 text-sm">{movie.overview}</p>
+                <p className="overflow-hidden tracking-wide m-4 text-sm">{movie.overview}</p>
               </div>
               </div>
             )
