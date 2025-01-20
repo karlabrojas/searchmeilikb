@@ -18,7 +18,8 @@ export default function Home() {
     const query = e.target.value;
     setBuscarPeliculas(query)
     if(query){
-      const results = await client.index("movies").search(query);setResultados(results.hits);
+      const results = await client.index("movies").search(query);
+      setResultados(results.hits);
     } else {
       setResultados([])
     }
@@ -31,7 +32,7 @@ export default function Home() {
         value={buscarPeliculas}
         onChange={buscar}
         type="text"
-        className="w-3/4 bg-gray-100 h-12 p-4 rounded-lg "/>
+        className="w-3/4 bg-gray-100 h-12 p-4 rounded-lg text-2xl"/>
       </div>
       <div className="grid grid-cols-3 m-10 bg-gray-50 " > 
         {
